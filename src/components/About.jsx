@@ -18,7 +18,7 @@ export default function About() {
             name: 'Education',
             icon1: './assets/edu-icon.png',
             icon2: './assets/edu-icon-dark.png',
-            description: 'MBA 2026 (Bharathiyar University), BCS 2022',
+            description: 'MBA 2026 (Bharathiyar University), Bachelor of Computer Science (Dr. N.G.P college of arts and science) 2022',
         },
         {
             name: 'Experience',
