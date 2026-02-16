@@ -10,7 +10,7 @@ export default function Work() {
       name: "AI-Augmented Developer Portfolio",
       icon: "./assets/work-2.png",
       description: "React, Tailwind CSS, GitHub Copilot",
-      link: "",
+      link: "https://portfolio-ai-rouge.vercel.app/",
     },
   ];
 
@@ -24,6 +24,7 @@ export default function Work() {
         development, modern frameworks, and software engineering principles.
       </p>
 
+      {/* PROJECT GRID */}
       <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">
         {work.map((item) => (
           <div
@@ -37,29 +38,19 @@ export default function Work() {
                 <p className="text-sm text-gray-700">{item.description}</p>
               </div>
 
-              {/* CLICKABLE ICON */}
-              {item.link ? (
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 border rounded-full border-black flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition cursor-pointer"
-                >
-                  <img
-                    src="./assets/send-icon.png"
-                    alt="Open project"
-                    className="w-5"
-                  />
-                </a>
-              ) : (
-                <div className="w-12 h-12 border rounded-full border-gray-300 flex items-center justify-center opacity-40 cursor-not-allowed">
-                  <img
-                    src="./assets/send-icon.png"
-                    alt="No link"
-                    className="w-5"
-                  />
-                </div>
-              )}
+              {/* SEND ICON LINK */}
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 border rounded-full border-black flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition cursor-pointer"
+              >
+                <img
+                  src="./assets/send-icon.png"
+                  alt="Open project"
+                  className="w-5"
+                />
+              </a>
             </div>
           </div>
         ))}
